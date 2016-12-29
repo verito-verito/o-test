@@ -1,0 +1,63 @@
+// mixins
+
+@mixin icon($name, $where) {
+    &::#{$where} {
+        content: $name;
+        font-family: 'olapic-icons';
+        -webkit-font-smoothing: antialiased;
+    }
+}
+
+// icons variables
+
+$icon-twitter:'\e800';
+$icon-warning-triangle:'\e801';
+$icon-warning-circle:'\e802';
+$icon-vine:'\e803';
+$icon-desktop:'\e804';
+$icon-youtube:'\e805';
+$icon-pinterest:'\e806';
+$icon-youtube-play:'\e807';
+$icon-spin:'\e808';
+$icon-instagram:'\e809';
+$icon-upload:'\e810';
+$icon-facebook:'\e811';
+$icon-flickr:'\e812';
+$icon-check:'\e813';
+$icon-tumbrl:'\e814';
+$icon-angle-down:'\e815';
+$icon-angle-left:'\e816';
+$icon-angle-right:'\e817';
+$icon-angle-up:'\e818';
+$icon-olapic:'\e819';
+$icon-google:'\e820';
+$icon-close:'\e821';
+$icon-cellphone:'\e822';
+$icon-reload:'\e823';
+$icon-list:'\e824';
+$icon-grid:'\e825';
+$icon-filter:'\e826';
+$icon-square:'\e827';
+
+
+// color variables
+
+$accent-color: #aaa;
+$color-desktop: #2b2b2b;
+$color-instagram: #06365f;
+$color-facebook: #3b559f;
+$color-twitter: #5ea9dd;
+$color-vine: #55be95;
+$color-flickr: #0063db;
+$color-dropbox: #3277e3;
+$color-youtube: #e90000;
+$color-googleplus: #da2713;
+$color-pinterest: #c9232d;
+$color-white: #fff;
+$color-gray: #454545;
+$color-black: #000;
+$color-body: #222;
+
+// Fonts
+
+$fonts-default: Arial, Helvetica, sans-serif;

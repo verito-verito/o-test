@@ -1,0 +1,233 @@
+// responsive
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+
+    .olapic-wall-widget {
+
+        .olapic-wall {
+
+            &.grid {
+                .item {
+
+                    float: none;
+                    display: inline-block;
+                }
+            }
+
+            &.mode_packery {
+
+                max-width: 1024px;
+                margin: 0 auto;
+
+                .item {
+                    width: 135px;
+                    height: 135px;
+
+                    &:nth-child(4n+4) {
+                        width: 280px;
+                        height: 280px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) {
+
+    .olapic-wall-widget {
+
+        .olapic-wall {
+
+            &.grid {
+                max-width: 768px;
+                margin: 0 auto;
+
+                .item {
+                    float: none;
+                    display: inline-block;
+                }
+            }
+
+            &.mode_packery {
+
+                .item {
+                    width: 143px;
+                    height: 143px;
+
+                    &:nth-child(4n+4) {
+                        width: 295px;
+                        height: 295px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+
+    .olapic-wall-widget {
+
+        .olapic-wall-header {
+            .olapic-view,
+            .olapic-nav {
+                display: none;
+            }
+        }
+
+        .olapic-nav-sticky {
+            position: fixed;
+            right: 0;
+            top: 0;
+            z-index: 1000;
+            display: none;
+            width: 100%;
+            padding: 0;
+            border-bottom: 1px solid $color-gray;
+            background: $color-white;
+            opacity: .9;
+
+            .olapic-upload,
+            .olapic-filter-sub {
+                display: none;
+            }
+
+            .olapic-view {
+                position: static;
+                width: 98px;
+                float: right;
+
+                a {
+                    padding: 15px;
+                    color: $color-gray;
+                    outline: none;
+                }
+            }
+
+            .olapic-categories-title {
+                position: static;
+                float: left;
+                padding: 15px 0 0 15px;
+
+                span {
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: $color-gray;
+                }
+            }
+
+            .olapic-open-sidebar {
+                float: left;
+                display: block;
+
+                a {
+                    float: left;
+                    padding: 15px;
+                    background: $accent-color;
+                    color: $color-white;
+                    outline: none;
+                }
+            }
+
+            .btn {
+                float: left;
+                border-right: 0;
+                border-radius: 0;
+
+                &.active {
+                    color: $color-white;
+                    background: $accent-color;
+                    box-shadow: none;
+                }
+            }
+        }
+
+        .olapic-view-grid,
+        .olapic-view-list,
+        .olapic-view-filter {
+            font-size: 18px;
+        }
+
+        .view-btn {
+            display: inline-block;
+            padding: 15px;
+            margin-bottom: 0;
+            vertical-align: middle;
+            font-size: 14px;
+            font-weight: normal;
+            text-align: center;
+            line-height: 1.42857;
+            white-space: nowrap;
+            cursor: pointer;
+        }
+
+        .olapic-wall {
+
+            &.grid {
+                max-width: 568px;
+
+                .item {
+                    position: relative;
+                    height: 240px;
+                    width: 240px;
+                    margin: 5px;
+                }
+
+                .olapic-item-info {
+                    display: none;
+                }
+
+            }
+
+            &.mode_packery {
+
+                .item {
+                    width: 178px;
+                    height: 178px;
+
+                    &:nth-child(4n+4) {
+                        height: 366px;
+                        width: 366px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 567px) {
+
+    .olapic-wall-widget {
+
+        .olapic-wall {
+
+            &.grid {
+
+                max-width: 320px;
+
+                .item {
+                    height: 150px;
+                    width: 150px;
+                }
+
+                .olapic-item-info {
+                    display: none;
+                }
+            }
+
+            &.mode_packery {
+
+                .item {
+
+                    &:nth-child(4n+4) {
+                        height: 310px;
+                        width: 310px;
+                    }
+                }
+
+            }
+        }
+    }
+}

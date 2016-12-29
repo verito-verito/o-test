@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'olapic-icons';
+  src: url('//photorankstatics-a.akamaihd.net/static/frontend/assets/olapic/olapic-icons.eot');
+  src: url('//photorankstatics-a.akamaihd.net/static/frontend/assets/olapic/olapic-icons.eot') format('embedded-opentype'),
+      url('//photorankstatics-a.akamaihd.net/static/frontend/assets/olapic/olapic-icons.woff') format('woff'),
+      url('//photorankstatics-a.akamaihd.net/static/frontend/assets/olapic/olapic-icons.ttf') format('truetype'),
+      url('//photorankstatics-a.akamaihd.net/static/frontend/assets/olapic/olapic-icons.svg#olapic-icons') format('svg');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('//photorankstatics-a.akamaihd.net/static/frontend/assets/olapic/Roboto.eot');
+  src: url('//photorankstatics-a.akamaihd.net/static/frontend/assets/olapic/Roboto.woff2') format('woff2'),
+       url('//photorankstatics-a.akamaihd.net/static/frontend/assets/olapic/Roboto.woff') format('woff'),
+       url('//photorankstatics-a.akamaihd.net/static/frontend/assets/olapic/Roboto.ttf') format('truetype'),
+       url('//photorankstatics-a.akamaihd.net/static/frontend/assets/olapic/Roboto.svg#Roboto') format('svg');
+}
+
+@font-face {
+  font-family: 'RobotoLight';
+  src: url('//photorankstatics-a.akamaihd.net/static/frontend/assets/olapic/RobotoLight.eot');
+  src: url('//photorankstatics-a.akamaihd.net/static/frontend/assets/olapic/RobotoLight.woff2') format('woff2'),
+       url('//photorankstatics-a.akamaihd.net/static/frontend/assets/olapic/RobotoLight.woff') format('woff'),
+       url('//photorankstatics-a.akamaihd.net/static/frontend/assets/olapic/RobotoLight.ttf') format('truetype'),
+       url('//photorankstatics-a.akamaihd.net/static/frontend/assets/olapic/RobotoLight.svg#RobotoLight') format('svg');
+}
+ 
+[class^="icon-"]::before, 
+[class*=" icon-"]::before {
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+}
