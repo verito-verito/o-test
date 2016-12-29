@@ -41,13 +41,13 @@ gulp.task('x-wing-lintscss', function (){
 });
 
 gulp.task('x-wing-styles', function (){
-    gulp.src('./src/**/*.scss')
+    gulp.src('./src/olapic_wallv2/styles.scss')
         .pipe(sass({errLogToConsole: true}))
         .pipe(autoprefixer({
             browsers: ['last 3 versions'],
             cascade: false}))
         .pipe(csscomb())
-        .pipe(gulp.dest('./dist'));
+        .pipe(gulp.dest('./public/css'));
 });
 
 gulp.task('default', ['x-wing-lintscss', 'x-wing-styles'], function(){
