@@ -5,7 +5,7 @@
 	<title>Olapic test</title>
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/styles.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" ></script>
@@ -29,7 +29,17 @@
                 </div>
             </div>
         </header>
-        <div class="olapic-nav">
+        <!-- Mobile menu -->
+        <div class="olapic-nav visible-xs">
+            <select class="mobile_options">
+                <option value="womens">WOMENS</option>
+                <option value="mens">MENS</option>
+                <option value="kids">KIDS</option>
+                <option value="accesories">ACCESORIES</option>
+            </select>
+        </div>
+        <!-- No-mobile menu -->
+        <div class="olapic-nav hidden-xs">
             <button data-link="womens">WOMENS</button>
             <button data-link="mens">MENS</button>
             <button data-link="kids">KIDS</button>

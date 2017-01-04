@@ -1,19 +1,37 @@
 $(document).ready(function(){
     
-var link = $(".olapic-nav [data-link]");
-    images = $("[data-img]");
+    var menuDesktop = $(".olapic-nav [data-link]"),
+        menuMobile = $(".olapic-nav .mobile_options"),
+        images = $("[data-img]"),
+        category = "";
 
-    
-    link.on("click", function(category){
-        var category = $(this).attr("data-link");
-        
-        images
-            .hide()
-            .filter('[data-img="' + category + '"]').show();
-            
+    menuDesktop.on("click", function(){
+        category = $(this).data("link");
+        menuMobile.find("option").filter(function() {
+            return $(this).val() === category; 
+        }).prop('selected', true);
+
+        activarImgs(category);
     });
 
+    menuMobile.on("change", function(){
+        category = menuMobile.val();
+        activarImgs(category);
+    });
 
-
+    function activarImgs(c){
+        images
+            .hide()
+            .filter('[data-img="' + c + '"]').show();
+    }
 
 });
+
+
+
+
+
+
+
+
+
