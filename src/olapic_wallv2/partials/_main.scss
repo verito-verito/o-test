@@ -115,6 +115,7 @@ body {
             border-bottom: 1px solid $color-gray;
             border-top: 1px solid $color-gray;
             text-align: center;
+            font-size: 16px;
 
             .olapic-categories-title {
                 position: absolute;
@@ -152,6 +153,41 @@ body {
                 background-color: $color-body;
                 border: 0;
                 margin: 0 14px;
+            }
+            
+            
+            .menu_mobile {
+                    min-width: 170px;
+                    display: inline-block;
+                    position: relative;
+                    line-height: 66px;
+                    text-align: left;
+                    padding: 0 30px;
+
+                &:after {
+                    content: '';
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 9px 6px 0;
+                    border-color: #fff transparent transparent;
+                    margin-left: 4px;
+                    display: inline-block;
+                    position: relative;
+                    top: -2px;
+                }
+                
+                .mobile_options {
+                        position: absolute;
+                        display: block;
+                        left: 0;
+                        bottom: 0;
+                        top: 0;
+                        width: 100%;
+                        opacity: 0;
+                        cursor: pointer;
+                }
+
             }
         }
 
@@ -688,6 +724,25 @@ body {
 
         }
     }
+    
+    .olapic_wall {
+        text-align: center;
+        
+        .olapic_viaw_all {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            display: inline-block;
+            width: auto;
+            padding: 17px 88px;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #fff;
+            border: 0;
+            border-radius: 0;
+            background: #61bc46;
+        }
+        
+    }
 
     @keyframes loading-graph {
         0% {
@@ -707,4 +762,5 @@ body {
             outline: none;
         }
     }
+    
 }

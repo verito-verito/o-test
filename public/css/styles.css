@@ -121,12 +121,14 @@ body
 }
 .test .olapic-wall-widget .olapic-nav
 {
+    font-size: 16px; 
+
     position: relative;
 
     margin: 0 auto 24px;
     padding: 10px 0;
 
-    text-align: center; 
+    text-align: center;
 
     border-top: 1px solid #454545;
     border-bottom: 1px solid #454545;
@@ -173,6 +175,51 @@ body
 
     border: 0;
     background-color: #222;
+}
+.test .olapic-wall-widget .olapic-nav .menu_mobile
+{
+    line-height: 66px;
+
+    position: relative;
+
+    display: inline-block;
+
+    min-width: 170px;
+    padding: 0 30px; 
+
+    text-align: left;
+}
+.test .olapic-wall-widget .olapic-nav .menu_mobile:after
+{
+    position: relative;
+    top: -2px; 
+
+    display: inline-block;
+
+    width: 0;
+    height: 0;
+    margin-left: 4px;
+
+    content: '';
+
+    border-width: 9px 6px 0;
+    border-style: solid;
+    border-color: #fff transparent transparent;
+}
+.test .olapic-wall-widget .olapic-nav .menu_mobile .mobile_options
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+
+    cursor: pointer; 
+
+    opacity: 0;
 }
 .test .olapic-wall-widget .olapic-header-column
 {
@@ -793,6 +840,28 @@ body
     text-decoration: none !important;
 
     opacity: 1;
+}
+.test .olapic_wall
+{
+    text-align: center;
+}
+.test .olapic_wall .olapic_viaw_all
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+
+    display: inline-block;
+
+    width: auto;
+    padding: 17px 88px;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: #fff;
+    border: 0;
+    border-radius: 0;
+    background: #61bc46;
 }
 
 @keyframes loading-graph
