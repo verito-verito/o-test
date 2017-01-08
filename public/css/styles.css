@@ -294,13 +294,40 @@ body
 {
     position: relative;
 
+    display: block;
     float: left;
     overflow: hidden;
 
-    width: 15.66%;
+    width: 13.6%;
     height: 0;
-    margin: .5%;
-    padding-top: 15.66%;
+    margin: 1.5%;
+    padding-top: 13.6%;
+}
+@media only screen and (min-width: 768px)
+{
+    .test .olapic-wall-widget .olapic-wall.grid .item:nth-child(7n+1),
+    .test .olapic-wall-widget .olapic-wall.grid .item:nth-child(16n)
+    {
+        width: 30.4%;
+        padding-top: 30.1%;
+    }
+    .test .olapic-wall-widget .olapic-wall.grid .item:nth-child(16n-8)
+    {
+        float: right;
+    }
+    .test .olapic-wall-widget .olapic-wall.grid .item:nth-child(13n),
+    .test .olapic-wall-widget .olapic-wall.grid .item:nth-child(14n)
+    {
+        float: right;
+    }
+    .test .olapic-wall-widget .olapic-wall.grid .item:nth-child(11n)
+    {
+        clear: left;
+    }
+    .test .olapic-wall-widget .olapic-wall.grid .item:nth-child(15n)
+    {
+        margin-top: -15.05%;
+    }
 }
 .test .olapic-wall-widget .olapic-wall.grid .item .olapic-item-media
 {
@@ -809,11 +836,6 @@ body
 
 @media screen and (min-width: 1024px) and (max-width: 1199px)
 {
-    .test .olapic-wall-widget .olapic-wall.grid .item
-    {
-        display: inline-block; 
-        float: none;
-    }
     .test .olapic-wall-widget .olapic-wall.mode_packery
     {
         max-width: 1024px;
@@ -837,11 +859,6 @@ body
     {
         max-width: 768px;
         margin: 0 auto;
-    }
-    .olapic-wall-widget .olapic-wall.grid .item
-    {
-        display: inline-block; 
-        float: none;
     }
     .olapic-wall-widget .olapic-wall.mode_packery .item
     {
@@ -971,14 +988,21 @@ body
     {
         position: relative;
 
-        width: 24%;
-        margin: .5%; 
-        padding-top: 24%;
+        width: 22%;
+        padding-top: 22%;
     }
-    .test .olapic-wall-widget .olapic-wall.grid .item:nth-child(5n+1)
+    .test .olapic-wall-widget .olapic-wall.grid .item:nth-child(9n+1)
     {
-        width: 49%;
-        padding-top: 49%;
+        width: 47%;
+        padding-top: 46.9%;
+    }
+    .test .olapic-wall-widget .olapic-wall.grid .item:nth-child(8n)
+    {
+        clear: left;
+    }
+    .test .olapic-wall-widget .olapic-wall.grid .item:nth-child(20n-10)
+    {
+        margin-top: -23.5%;
     }
     .test .olapic-wall-widget .olapic-wall.grid .olapic-item-info
     {

@@ -7,9 +7,6 @@
 
             &.grid {
                 .item {
-
-                    float: none;
-                    display: inline-block;
                 }
             }
 
@@ -41,11 +38,6 @@
             &.grid {
                 max-width: 768px;
                 margin: 0 auto;
-
-                .item {
-                    float: none;
-                    display: inline-block;
-                }
             }
 
             &.mode_packery {
@@ -169,13 +161,22 @@
 
                 .item {
                     position: relative;
-                    width: 24%;
-                    padding-top: 24%;
-                    margin: .5%;
+                    width: 22%;
+                    padding-top: 22%;
 
-                    &:nth-child(5n+1) {
-                        width: 49%;
-                        padding-top: 49%;
+                    &:nth-child(9n+1) {
+                        width: 47%;
+                        padding-top: 46.9%;
+
+                    }
+
+                    &:nth-child(8n) {
+                        clear: left;
+
+                    }                    
+
+                    &:nth-child(20n-10) {
+                        margin-top: -23.5%;
 
                     }
                 }

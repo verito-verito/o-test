@@ -241,13 +241,43 @@ body {
             }
 
             &.grid .item {
+                display: block;
                 position: relative;
                 height: 0;
-                width: 15.66%;
                 float: left;
                 overflow: hidden;
-                margin: .5%;
-                padding-top: 15.66%;
+                margin: 1.5%;
+                width: 13.6%;
+                padding-top: 13.6%;
+
+                @media only screen and (min-width: 768px) {
+                    &:nth-child(7n+1),
+                    &:nth-child(16n) {
+                        width: 30.4%;
+                        padding-top: 30.1%;
+
+                    }
+
+                    &:nth-child(16n-8) {
+                        float: right;
+
+                    }
+
+                    &:nth-child(13n),
+                    &:nth-child(14n) {
+                        float: right;
+                    }
+
+                    &:nth-child(11n) {
+                        clear: left;
+                    }
+
+                    &:nth-child(15n) {
+                        margin-top: -15.05%;
+                    }
+                }
+
+
 
                 .olapic-item-media {
                     position: absolute;
