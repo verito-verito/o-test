@@ -1,7 +1,9 @@
 @charset 'UTF-8';
 body
 {
-    color: #fff; 
+    font-family: 'Helvetica', Arial, sans-serif; 
+
+    color: #fff;
     background-color: #222;
 }
 
@@ -17,7 +19,6 @@ body
 
     height: auto;
     margin: 0 auto;
-    /* Header */
     /* filters */
     /* sticky nav */
     /* image grid style */
@@ -60,78 +61,20 @@ body
 
     border-radius: 3px;
 }
+.test .olapic-wall-widget .btn,
 .test .olapic-wall-widget .btn:focus,
 .test .olapic-wall-widget .btn:active
 {
     outline: none;
 }
-.test .olapic-wall-widget .olapic-wall-header .olapic-top .olapic-tools
-{
-    position: relative;
-
-    text-align: center;
-}
-.test .olapic-wall-widget .olapic-wall-header .olapic-top .olapic-tools i
-{
-    margin: 4px 0 0;
-}
-.test .olapic-wall-widget .olapic-wall-header .olapic-top .olapic-tools .olapic-upload
-{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-
-    display: inline-block;
-
-    width: auto;
-    margin: 20px auto;
-    padding: 15px 30px;
-
-    text-decoration: none; 
-    text-transform: uppercase;
-
-    color: #fff;
-    border: 0;
-    border-radius: 0;
-    background: #61bc46;
-}
-.test .olapic-wall-widget .olapic-wall-header .olapic-top .olapic-tools .olapic-upload:hover
-{
-    background: #aaa;
-}
-.test .olapic-wall-widget .olapic-wall-header .olapic-top .olapic-tools .logo_schun_style_gallery
-{
-    width: 306px;
-    height: 84px;
-    margin: 76px auto 17px;
-
-    text-indent: -9999px; 
-
-    background: url('../images/logo.png') no-repeat;
-}
-.test .olapic-wall-widget .olapic-wall-header .olapic-top .olapic-tools .olapic-header-hashtag
-{
-    font-size: 24px; 
-
-    color: #0af;
-}
-.test .olapic-wall-widget .olapic-wall-header .olapic-top .olapic-tools .olapic-header-space
-{
-    max-width: 833px; 
-    margin: auto;
-}
 .test .olapic-wall-widget .olapic-nav
 {
-    font-size: 16px; 
-
     position: relative;
 
-    margin: 0 auto 24px;
-    padding: 10px 0;
+    clear: both;
 
-    text-align: center;
-
-    border-top: 1px solid #454545;
-    border-bottom: 1px solid #454545;
+    width: 100%;
+    margin: 0 auto;
 }
 .test .olapic-wall-widget .olapic-nav .olapic-categories-title
 {
@@ -146,13 +89,31 @@ body
 
     color: #5d5d5d;
 }
+.test .olapic-wall-widget .olapic-nav nav
+{
+    clear: both; 
+
+    width: 100%;
+    padding: 10px 0;
+
+    border-top: 1px solid #454545;
+    border-bottom: 1px solid #454545;
+}
 .test .olapic-wall-widget .olapic-nav .nav
 {
-    padding: 0;
+    width: 100%; 
+
+    text-align: center;
 }
 .test .olapic-wall-widget .olapic-nav .nav li
 {
     display: inline-block;
+    float: none;
+}
+.test .olapic-wall-widget .olapic-nav .nav li:active a,
+.test .olapic-wall-widget .olapic-nav .nav li.active a
+{
+    background: #61bc46;
 }
 .test .olapic-wall-widget .olapic-nav .nav a
 {
@@ -165,61 +126,14 @@ body
 
     color: #fff;
 }
+.test .olapic-wall-widget .olapic-nav .nav a,
 .test .olapic-wall-widget .olapic-nav .nav a:hover
 {
-    background: #aaa;
+    background-color: transparent;
 }
-.test .olapic-wall-widget .olapic-nav button
+.test .olapic-wall-widget .olapic-nav i
 {
-    margin: 0 14px; 
-
-    border: 0;
-    background-color: #222;
-}
-.test .olapic-wall-widget .olapic-nav .menu_mobile
-{
-    line-height: 66px;
-
-    position: relative;
-
-    display: inline-block;
-
-    min-width: 170px;
-    padding: 0 30px; 
-
-    text-align: left;
-}
-.test .olapic-wall-widget .olapic-nav .menu_mobile:after
-{
-    position: relative;
-    top: -2px; 
-
-    display: inline-block;
-
-    width: 0;
-    height: 0;
-    margin-left: 4px;
-
-    content: '';
-
-    border-width: 9px 6px 0;
-    border-style: solid;
-    border-color: #fff transparent transparent;
-}
-.test .olapic-wall-widget .olapic-nav .menu_mobile .mobile_options
-{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-
-    display: block;
-
-    width: 100%;
-
-    cursor: pointer; 
-
-    opacity: 0;
+    display: none;
 }
 .test .olapic-wall-widget .olapic-header-column
 {
@@ -228,27 +142,6 @@ body
     float: left;
 
     width: 33%;
-
-    text-align: center;
-}
-.test .olapic-wall-widget .row
-{
-    margin-right: -24px;
-    margin-left: -24px;
-}
-.test .olapic-wall-widget .row [class^='col-']
-{
-    padding-right: 24px; 
-    padding-left: 24px;
-}
-.test .olapic-wall-widget .row [class^='col-'] [class^='col-']
-{
-    margin-bottom: 48px;
-}
-.test .olapic-wall-widget .row [class^='col-'] .img-responsive
-{
-    width: 100%;
-    max-width: none;
 }
 .test .olapic-wall-widget .sticky-menu .olapic-wall-header .olapic-nav
 {
@@ -360,6 +253,7 @@ body
     overflow: hidden;
 
     box-sizing: border-box;
+    max-width: 1140px; 
     margin: 0 auto;
     padding: 10px 0 80px;
 
@@ -383,6 +277,8 @@ body
 {
     position: relative;
 
+    overflow: hidden;
+
     margin: 0;
     padding: 0;
 
@@ -401,9 +297,10 @@ body
     float: left;
     overflow: hidden;
 
-    width: 290px;
-    height: 290px;
-    margin: 10px;
+    width: 15.66%;
+    height: 0;
+    margin: .5%;
+    padding-top: 15.66%;
 }
 .test .olapic-wall-widget .olapic-wall.grid .item .olapic-item-media
 {
@@ -452,6 +349,8 @@ body
     height: 100%;
 
     cursor: pointer;
+
+    border: 0 !important;
 }
 .test .olapic-wall-widget .olapic-wall .olapic-permalink
 {
@@ -502,6 +401,7 @@ body
     float: left;
 
     width: 200px;
+    max-width: 110px; 
     height: 50px;
     margin: 13px 0 0;
 
@@ -721,7 +621,6 @@ body
 }
 .test .olapic-wall-widget .olapic-loadmore
 {
-    font-family: 'Helvetica', Arial, sans-serif;
     font-size: 14px;
 
     position: absolute;
@@ -742,7 +641,7 @@ body
     color: #fff;
     border: 1px solid #000;
     border-radius: 0;
-    background: #000;
+    background: #61bc46;
 }
 .test .olapic-wall-widget .olapic-wall-footer
 {
@@ -841,27 +740,54 @@ body
 
     opacity: 1;
 }
-.test .olapic_wall
+.test .olapic-tools
 {
     text-align: center;
 }
-.test .olapic_wall .olapic_viaw_all
+.test .olapic-tools .olapic-header-hashtag
 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 24px;
+
+    text-decoration: none; 
+
+    color: #0af;
+}
+.test .olapic-tools .logo_schun_style_gallery
+{
+    width: 306px;
+    height: 84px;
+    margin: 76px auto 17px;
+
+    text-indent: -9999px; 
+
+    background: url('../images/logo.png') no-repeat;
+}
+.test .olapic-tools .olapic-header-space
+{
+    max-width: 833px; 
+    margin: auto;
+}
+.test .olapic-wall-header .olapic-top .olapic-tools .olapic-upload::before
+{
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
 
     display: inline-block;
 
-    width: auto;
-    padding: 17px 88px;
+    margin-right: 5px; 
 
-    text-decoration: none;
-    text-transform: uppercase;
+    content: '\f030';
 
-    color: #fff;
-    border: 0;
-    border-radius: 0;
-    background: #61bc46;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.test .olapic-wall-header .olapic-top .olapic-tools .olapic-upload,
+.test .olapic-wall-header .olapic-top .olapic-tools .olapic-upload:focus,
+.test .olapic-wall-header .olapic-top .olapic-tools .olapic-upload:active
+{
+    outline: none;
+    background: #61bc46 !important;
 }
 
 @keyframes loading-graph
@@ -883,22 +809,22 @@ body
 
 @media screen and (min-width: 1024px) and (max-width: 1199px)
 {
-    .olapic-wall-widget .olapic-wall.grid .item
+    .test .olapic-wall-widget .olapic-wall.grid .item
     {
         display: inline-block; 
         float: none;
     }
-    .olapic-wall-widget .olapic-wall.mode_packery
+    .test .olapic-wall-widget .olapic-wall.mode_packery
     {
         max-width: 1024px;
         margin: 0 auto;
     }
-    .olapic-wall-widget .olapic-wall.mode_packery .item
+    .test .olapic-wall-widget .olapic-wall.mode_packery .item
     {
         width: 135px;
         height: 135px;
     }
-    .olapic-wall-widget .olapic-wall.mode_packery .item:nth-child(4n+4)
+    .test .olapic-wall-widget .olapic-wall.mode_packery .item:nth-child(4n+4)
     {
         width: 280px;
         height: 280px;
@@ -931,12 +857,12 @@ body
 
 @media screen and (max-width: 767px)
 {
-    .olapic-wall-widget .olapic-wall-header .olapic-view,
-    .olapic-wall-widget .olapic-wall-header .olapic-nav
+    .test .olapic-wall-widget .olapic-wall-header .olapic-view,
+    .test .olapic-wall-widget .olapic-wall-header .olapic-nav
     {
-        display: none;
+        display: block;
     }
-    .olapic-wall-widget .olapic-nav-sticky
+    .test .olapic-wall-widget .olapic-nav-sticky
     {
         position: fixed;
         z-index: 1000;
@@ -952,12 +878,12 @@ body
         border-bottom: 1px solid #454545;
         background: #fff;
     }
-    .olapic-wall-widget .olapic-nav-sticky .olapic-upload,
-    .olapic-wall-widget .olapic-nav-sticky .olapic-filter-sub
+    .test .olapic-wall-widget .olapic-nav-sticky .olapic-upload,
+    .test .olapic-wall-widget .olapic-nav-sticky .olapic-filter-sub
     {
         display: none;
     }
-    .olapic-wall-widget .olapic-nav-sticky .olapic-view
+    .test .olapic-wall-widget .olapic-nav-sticky .olapic-view
     {
         position: static;
 
@@ -965,14 +891,14 @@ body
 
         width: 98px;
     }
-    .olapic-wall-widget .olapic-nav-sticky .olapic-view a
+    .test .olapic-wall-widget .olapic-nav-sticky .olapic-view a
     {
         padding: 15px;
 
         color: #454545;
         outline: none;
     }
-    .olapic-wall-widget .olapic-nav-sticky .olapic-categories-title
+    .test .olapic-wall-widget .olapic-nav-sticky .olapic-categories-title
     {
         position: static;
 
@@ -980,19 +906,19 @@ body
 
         padding: 15px 0 0 15px;
     }
-    .olapic-wall-widget .olapic-nav-sticky .olapic-categories-title span
+    .test .olapic-wall-widget .olapic-nav-sticky .olapic-categories-title span
     {
         font-size: 14px;
         font-weight: bold;
 
         color: #454545;
     }
-    .olapic-wall-widget .olapic-nav-sticky .olapic-open-sidebar
+    .test .olapic-wall-widget .olapic-nav-sticky .olapic-open-sidebar
     {
         display: block; 
         float: left;
     }
-    .olapic-wall-widget .olapic-nav-sticky .olapic-open-sidebar a
+    .test .olapic-wall-widget .olapic-nav-sticky .olapic-open-sidebar a
     {
         float: left;
 
@@ -1002,26 +928,26 @@ body
         outline: none; 
         background: #aaa;
     }
-    .olapic-wall-widget .olapic-nav-sticky .btn
+    .test .olapic-wall-widget .olapic-nav-sticky .btn
     {
         float: left;
 
         border-right: 0;
         border-radius: 0;
     }
-    .olapic-wall-widget .olapic-nav-sticky .btn.active
+    .test .olapic-wall-widget .olapic-nav-sticky .btn.active
     {
         color: #fff;
         background: #aaa;
         box-shadow: none;
     }
-    .olapic-wall-widget .olapic-view-grid,
-    .olapic-wall-widget .olapic-view-list,
-    .olapic-wall-widget .olapic-view-filter
+    .test .olapic-wall-widget .olapic-view-grid,
+    .test .olapic-wall-widget .olapic-view-list,
+    .test .olapic-wall-widget .olapic-view-filter
     {
         font-size: 18px;
     }
-    .olapic-wall-widget .view-btn
+    .test .olapic-wall-widget .view-btn
     {
         font-size: 14px;
         font-weight: normal;
@@ -1037,28 +963,33 @@ body
         vertical-align: middle;
         white-space: nowrap;
     }
-    .olapic-wall-widget .olapic-wall.grid
+    .test .olapic-wall-widget .olapic-wall.grid
     {
         max-width: 568px;
     }
-    .olapic-wall-widget .olapic-wall.grid .item
+    .test .olapic-wall-widget .olapic-wall.grid .item
     {
         position: relative;
 
-        width: 240px;
-        height: 240px;
-        margin: 5px;
+        width: 24%;
+        margin: .5%; 
+        padding-top: 24%;
     }
-    .olapic-wall-widget .olapic-wall.grid .olapic-item-info
+    .test .olapic-wall-widget .olapic-wall.grid .item:nth-child(5n+1)
+    {
+        width: 49%;
+        padding-top: 49%;
+    }
+    .test .olapic-wall-widget .olapic-wall.grid .olapic-item-info
     {
         display: none;
     }
-    .olapic-wall-widget .olapic-wall.mode_packery .item
+    .test .olapic-wall-widget .olapic-wall.mode_packery .item
     {
         width: 178px;
         height: 178px;
     }
-    .olapic-wall-widget .olapic-wall.mode_packery .item:nth-child(4n+4)
+    .test .olapic-wall-widget .olapic-wall.mode_packery .item:nth-child(4n+4)
     {
         width: 366px; 
         height: 366px;
@@ -1067,20 +998,25 @@ body
 
 @media screen and (max-width: 567px)
 {
-    .olapic-wall-widget .olapic-wall.grid
+    .test .olapic-wall-widget .olapic-wall.grid
     {
         max-width: 320px;
     }
-    .olapic-wall-widget .olapic-wall.grid .item
+    .test .olapic-wall-widget .olapic-wall.grid .item
     {
-        width: 150px; 
-        height: 150px;
+        width: 49%;
+        padding-top: 49%;
     }
-    .olapic-wall-widget .olapic-wall.grid .olapic-item-info
+    .test .olapic-wall-widget .olapic-wall.grid .item:nth-child(5n+1)
+    {
+        width: 99%;
+        padding-top: 99%;
+    }
+    .test .olapic-wall-widget .olapic-wall.grid .olapic-item-info
     {
         display: none;
     }
-    .olapic-wall-widget .olapic-wall.mode_packery .item:nth-child(4n+4)
+    .test .olapic-wall-widget .olapic-wall.mode_packery .item:nth-child(4n+4)
     {
         width: 310px; 
         height: 310px;

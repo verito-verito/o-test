@@ -1,10 +1,10 @@
+    // icons
 body {
     background-color: $color-body;
     color: $color-white;
+    font-family: 'Helvetica', Arial, sans-serif;
 }
 
-
-// icons
 .test {
     .olapic-wall-widget {
         overflow: hidden;
@@ -40,82 +40,20 @@ body {
     	    cursor: pointer;
     	    border-radius: 3px;
 
+            &,
             &:focus,
             &:active {
                 outline: none;
-            }
-        }
-
-        /* Header */
-        .olapic-wall-header {
-//            width: 100%;
-//            float: left;
-
-            .olapic-top {
-//                width: 100%;
-
-//                .olapic-cover {
-//                    width: 100%;
-//                    float: left;
-//                }
-
-                .olapic-tools {
-                    position: relative;
-                    text-align: center;
-
-                    i {
-                        margin: 4px 0 0;
-                    }
-
-                    .olapic-upload {
-                        display: inline-block;
-                        width: auto;
-                        margin: 20px auto;
-                        padding: 15px 30px;
-                        border-radius: 0;
-                        border: 0;
-                        font-family: $fonts-default;
-                        text-transform: uppercase;
-                        color: #fff;
-                        font-size: 14px;
-                        background: #61bc46;
-                        text-decoration: none;
-
-                        &:hover {
-                            background: $accent-color;
-                        }
-                    }
-                    
-                    .logo_schun_style_gallery {
-                        background: url('#{$img-route}logo.png') no-repeat;
-                        width: 306px;
-                        height: 84px;
-                        margin: 76px auto 17px;
-                        text-indent: -9999px;
-                    } 
-                    
-                    .olapic-header-hashtag {
-                        color: #0af;
-                        font-size: 24px;
-                    } 
-                    
-                    .olapic-header-space {
-                        margin: auto;
-                        max-width: 833px;
-                    }
-                }
+                
             }
         }
         
         /* filters */
         .olapic-nav {
             position: relative;
-            margin: 0 auto 24px;
-            padding: 10px 0;
-            border-bottom: 1px solid $color-gray;
-            border-top: 1px solid $color-gray;
-            text-align: center;
-            font-size: 16px;
+            clear: both;
+            width: 100%;
+            margin: 0 auto;
 
             .olapic-categories-title {
                 position: absolute;
@@ -129,11 +67,30 @@ body {
                 }
             }
 
+            nav {
+                border-bottom: 1px solid $color-gray;
+                border-top: 1px solid $color-gray;
+                width: 100%;
+                padding: 10px 0;
+                clear: both;
+
+            }
+
             .nav {
-                padding: 0;
+                text-align: center;
+                width: 100%;
 
                 li {
                     display: inline-block;
+                    float: none;
+
+                    &:active,
+                    &.active {
+
+                        a {
+                           background: $color-btn-green; 
+                        }
+                    }
                 }
 
                 a {
@@ -143,51 +100,15 @@ body {
                     text-transform: uppercase;
                     color: $color-white;
 
+                    &,
                     &:hover {
-                        background: $accent-color;
+                        background-color: transparent;
                     }
                 }
             }
-            
-            button {
-                background-color: $color-body;
-                border: 0;
-                margin: 0 14px;
-            }
-            
-            
-            .menu_mobile {
-                    min-width: 170px;
-                    display: inline-block;
-                    position: relative;
-                    line-height: 66px;
-                    text-align: left;
-                    padding: 0 30px;
 
-                &:after {
-                    content: '';
-                    width: 0;
-                    height: 0;
-                    border-style: solid;
-                    border-width: 9px 6px 0;
-                    border-color: #fff transparent transparent;
-                    margin-left: 4px;
-                    display: inline-block;
-                    position: relative;
-                    top: -2px;
-                }
-                
-                .mobile_options {
-                        position: absolute;
-                        display: block;
-                        left: 0;
-                        bottom: 0;
-                        top: 0;
-                        width: 100%;
-                        opacity: 0;
-                        cursor: pointer;
-                }
-
+            i {
+                display: none;
             }
         }
 
@@ -195,28 +116,8 @@ body {
             position: relative;
             float: left;
             width: 33%;
-            text-align: center;
         }
-        
-        .row {
-            margin-right: -24px;
-            margin-left: -24px;
 
-            [class^="col-"] {
-                padding-left: 24px;
-                padding-right: 24px;
-
-                [class^="col-"] {
-                    margin-bottom: 48px;
-                }
-
-                .img-responsive {
-                    width: 100%;
-                    max-width: none;
-                }
-            }
-        }
-        
         .sticky-menu .olapic-wall-header .olapic-nav {
             position: fixed;
             z-index: 9000;
@@ -313,6 +214,7 @@ body {
             padding: 10px 0 80px;
             box-sizing: border-box;
             text-align: center;
+            max-width: 1140px;
         }
 
         /* image grid style */
@@ -332,6 +234,7 @@ body {
             padding: 0;
             margin: 0;
             list-style: none;
+            overflow: hidden;
 
             .olapic-related-products {
                 display: none;
@@ -339,11 +242,12 @@ body {
 
             &.grid .item {
                 position: relative;
-                height: 290px;
-                width: 290px;
+                height: 0;
+                width: 15.66%;
                 float: left;
                 overflow: hidden;
-                margin: 10px;
+                margin: .5%;
+                padding-top: 15.66%;
 
                 .olapic-item-media {
                     position: absolute;
@@ -387,6 +291,7 @@ body {
                 width: 100%;
                 height: 100%;
                 cursor: pointer;
+                border: 0 !important;
             }
 
             .olapic-permalink {
@@ -436,6 +341,7 @@ body {
                 height: 50px;
                 margin: 13px 0 0;
                 text-align: left;
+                max-width: 110px;
 
                 .olapic-user-name {
                     position: relative;
@@ -630,12 +536,11 @@ body {
             margin: 0 0 0 -75px;
             border-radius: 0;
             border: 1px solid $color-black;
-            font-family: 'Helvetica', Arial, sans-serif;
             font-size: 14px;
             text-align: center;
             text-transform: uppercase;
             color: #fff;
-            background: $color-black;
+            background: $color-btn-green;
             cursor: pointer;
         }
 
@@ -724,24 +629,61 @@ body {
 
         }
     }
-    
-    .olapic_wall {
+
+    .olapic-tools {
+
         text-align: center;
-        
-        .olapic_viaw_all {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 14px;
-            display: inline-block;
-            width: auto;
-            padding: 17px 88px;
+
+        .olapic-header-hashtag {
+            color: #0af;
+            font-size: 24px;
             text-decoration: none;
-            text-transform: uppercase;
-            color: #fff;
-            border: 0;
-            border-radius: 0;
-            background: #61bc46;
+        } 
+
+        .logo_schun_style_gallery {
+            background: url('../images/logo.png') no-repeat;
+            width: 306px;
+            height: 84px;
+            margin: 76px auto 17px;
+            text-indent: -9999px;
+        } 
+
+        .olapic-header-space {
+            margin: auto;
+            max-width: 833px;
         }
-        
+
+    }
+
+    .olapic-wall-header {
+
+        .olapic-top {
+
+            .olapic-tools {
+
+                .olapic-upload {
+
+                    &::before {
+                        content: '\f030';
+                        display: inline-block;
+                        font: normal normal normal 14px/1 FontAwesome;
+                        font-size: inherit;
+                        text-rendering: auto;
+                        -webkit-font-smoothing: antialiased;
+                        -moz-osx-font-smoothing: grayscale;
+                        margin-right: 5px;
+                    }
+
+                    &,
+                    &:focus,
+                    &:active {
+                        outline: none;
+                        background: $color-btn-green !important;
+                        
+                    }
+                }
+            }
+        }
     }
 
     @keyframes loading-graph {
@@ -762,5 +704,4 @@ body {
             outline: none;
         }
     }
-    
 }

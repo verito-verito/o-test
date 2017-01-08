@@ -1,6 +1,6 @@
 $(document).ready(function(){
     
-    var menuDesktop = $(".olapic-nav [data-link]"),
+    /*var menuDesktop = $(".olapic-nav [data-link]"),
         menuMobile = $(".olapic-nav .mobile_options"),
         images = $("[data-img]"),
         category = "",
@@ -27,7 +27,9 @@ $(document).ready(function(){
         images
             .hide()
             .filter('[data-img="' + c + '"]').show();
-    }
+    }*/
+
+    
 
 });
 

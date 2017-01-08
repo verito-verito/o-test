@@ -3,124 +3,26 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Olapic test</title>
-    
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/styles.css">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" ></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="js/jquery.js"></script>
-    
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" ></script>
+    <script src="js/all.js"></script>
 </head>
-<body class="test">
-    <div class="olapic-wall-widget">
-        <header class="olapic-wall-header container">
-            <div class="olapic-top">
-                <div class="olapic-tools">
-                    <h1 class="logo_schun_style_gallery">SCHUN STYLE GALLERY</h1>
-                    <p><a href="#" class="olapic-header-hashtag">#SCHUHSTYLE</a></p>
-                    <p class="olapic-header-space">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <a href="#" class="olapic-upload">  
-                        <i class="fa fa-camera" aria-hidden="true"></i>
-                        UPLOAD YOUR PHOTO
-                    </a>
-                </div>
+<body>
+	<div class="test">
+		<header class="container">
+			<div class="olapic-tools">
+                <h1 class="logo_schun_style_gallery">SCHUN STYLE GALLERY</h1>
+                <p><a href="#" class="olapic-header-hashtag">#SCHUHSTYLE</a></p>
+                <p class="olapic-header-space">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-        </header>
-        <!-- Mobile menu -->
-        <div class="olapic-nav visible-xs">
-            <div class="menu_mobile">
-                <span class="menu_mobile_text">WOMENS</span>
-                <select class="mobile_options">
-                    <option value="womens">WOMENS</option>
-                    <option value="mens">MENS</option>
-                    <option value="kids">KIDS</option>
-                    <option value="accesories">ACCESORIES</option>
-                </select>
-            </div>
-        </div>
-        <!-- No-mobile menu -->
-        <div class="olapic-nav hidden-xs">
-            <button data-link="womens">WOMENS</button>
-            <button data-link="mens">MENS</button>
-            <button data-link="kids">KIDS</button>
-            <button data-link="accesories">ACCESORIES</button>
-        </div>
-        <div id="olapic_specific_widget"></div>
-        <!--<script type="text/javascript" src="https://photorankstatics-a.akamaihd.net/81b03e40475846d5883661ff57b34ece/static/frontend/latest/build.min.js"  data-olapic="olapic_specific_widget" data-instance="750e9a473a7957735eb7590e7fc6e289" data-apikey="0daf989524ec261bb7dfa87e68b6feb3fe3f739b996d7a69266a6fef6ab2df05" async="async"></script>-->
-        <div class="container">
-            <section class="row">
-                <!-- Column 1 -->
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="row">
-                        <div class="col-xs-12" data-img="womens">
-                            <img class="img-responsive" alt="img_1" src="images/img_01.jpg">
-                        </div>
-                        <div class="col-xs-6 hidden-xs" data-img="accesories">
-                            <img class="img-responsive" alt="img_2" src="images/img_02.jpg">
-                        </div>
-                        <div class="col-xs-6 hidden-xs" data-img="womens">
-                            <img class="img-responsive" alt="img_3" src="images/img_03.jpg">
-                        </div>
-                        <div class="col-xs-6 hidden-xs" data-img="womens">
-                            <img class="img-responsive" alt="img_4" src="images/img_04.jpg">
-                        </div>
-                        <div class="col-xs-6 hidden-xs" data-img="womens">
-                            <img class="img-responsive" alt="img_5" src="images/img_05.jpg">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Column 2 -->
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="row">
-                        <div class="col-xs-6" data-img="accesories">
-                            <img class="img-responsive" alt="img_6" src="images/img_06.jpg">
-                        </div>
-                        <div class="col-xs-6" data-img="womens">
-                            <img class="img-responsive" alt="img_7" src="images/img_07.jpg">
-                        </div>
-                        <div class="col-xs-6 hidden-xs" data-img="womens">
-                            <img class="img-responsive" alt="img_8" src="images/img_08.jpg">
-                        </div>
-                        <div class="col-xs-6 hidden-xs" data-img="womens">
-                            <img class="img-responsive" alt="img_9" src="images/img_09.jpg">
-                        </div>
-                        <div class="col-xs-12 hidden-xs" data-img="womens">
-                            <img class="img-responsive" alt="img_10" src="images/img_010.jpg">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Column 3 -->
-                <div class="col-md-4 hidden-sm">
-                    <div class="row">
-                        <div class="col-xs-6" data-img="mens">
-                            <img class="img-responsive" alt="img_011" src="images/img_011.jpg">
-                        </div>
-                        <div class="col-xs-6" data-img="accesories">
-                            <img class="img-responsive" alt="img_012" src="images/img_012.jpg">
-                        </div>
-                        <div class="col-xs-12" data-img="mens">
-                            <img class="img-responsive" alt="img_013" src="images/img_013.jpg">
-                        </div>
-                        <div class="col-xs-6 hidden-xs" data-img="kids">
-                            <img class="img-responsive" alt="img_014" src="images/img_014.jpg">
-                        </div>
-                        <div class="col-xs-6 hidden-xs" data-img="accesories">
-                            <img class="img-responsive" alt="img_015" src="images/img_015.jpg">
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="olapic_wall">
-                    <a href="#" class="olapic_viaw_all">
-                        VIEW ALL
-                    </a>
-            </section>
-        </div>
+		</header>
+		
+		<div id="olapic_specific_widget"></div>
+		<script type="text/javascript" src="https://photorankstatics-a.akamaihd.net/81b03e40475846d5883661ff57b34ece/static/frontend/latest/build.min.js"  data-olapic="olapic_specific_widget" data-instance="750e9a473a7957735eb7590e7fc6e289" data-apikey="0daf989524ec261bb7dfa87e68b6feb3fe3f739b996d7a69266a6fef6ab2df05" async="async"></script>
+		
 	</div>	
 </body>
 </html>
