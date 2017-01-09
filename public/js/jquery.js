@@ -1,6 +1,6 @@
 $(document).ready(function(){
     
-    /*var menuDesktop = $(".olapic-nav [data-link]"),
+    var menuDesktop = $(".olapic-nav [data-link]"),
         menuMobile = $(".olapic-nav .mobile_options"),
         images = $("[data-img]"),
         category = "",
@@ -27,22 +27,8 @@ $(document).ready(function(){
         images
             .hide()
             .filter('[data-img="' + c + '"]').show();
-    }*/
+    }
 
-    /*$(".mobile_options").val(function(){
-        $("[data-name]").trigger( "click" );
-    });*/
-
-    var menuMobile = $(".olapic-nav_mobile .mobile_options");
-    menuMobileText = $(".menu_mobile .menu_mobile_text");
-
-    menuMobile.on("change", function(){
-        var value = menuMobile.val();        
-        var text = menuMobile.find("option:selected").text();
-
-        $('#olapic-filters [data-name="' + value + '"]').trigger("click");
-        menuMobileText.text(text);
-    }); 
 });
 
 

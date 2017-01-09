@@ -216,40 +216,55 @@
 
 @media screen and (max-width: 567px) {
 
-    .test .olapic-wall-widget {
+    .test {
+        .olapic-wall-widget {
 
-        .olapic-wall {
+            .olapic-wall {
 
-            &.grid {
+                &.grid {
 
-                max-width: 320px;
+                    max-width: 320px;
 
-                .item {
-                    width: 47%;
-                    padding-top: 47%;
+                    .item {
+                        width: 47%;
+                        padding-top: 47%;
 
-                    &:nth-child(5n+1) {
-                        width: 99%;
-                        padding-top: 99%;
+                        &:nth-child(5n+1) {
+                            width: 99%;
+                            padding-top: 99%;
 
+                        }
+                    }
+
+                    .olapic-item-info {
+                        display: none;
                     }
                 }
 
-                .olapic-item-info {
-                    display: none;
+                &.mode_packery {
+
+                    .item {
+
+                        &:nth-child(4n+4) {
+                            height: 310px;
+                            width: 310px;
+                        }
+                    }
+
                 }
             }
+        }
 
-            &.mode_packery {
+        .olapic-nav_mobile {
+            margin-top: 100px;
+            display: block;
+        }
 
-                .item {
+        .olapic-wall-widget {
+            margin-top: -200px;
 
-                    &:nth-child(4n+4) {
-                        height: 310px;
-                        width: 310px;
-                    }
-                }
-
+            .olapic-wall-body {
+                margin-top: 200px;
             }
         }
     }
