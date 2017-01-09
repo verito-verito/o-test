@@ -57,7 +57,7 @@
 }
 
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 568px) and (max-width: 767px) {
 
     .test .olapic-wall-widget {
 
@@ -179,6 +179,16 @@
                         margin-top: -23.5%;
 
                     }
+
+                    &:nth-child(13n),
+                    &:nth-child(14n) {
+                        margin-top: -133px;
+
+                    }
+
+                    &:nth-child(15n) {
+                        clear: left;
+                    }
                 }
 
                 .olapic-item-info {
@@ -215,8 +225,8 @@
                 max-width: 320px;
 
                 .item {
-                    width: 49%;
-                    padding-top: 49%;
+                    width: 47%;
+                    padding-top: 47%;
 
                     &:nth-child(5n+1) {
                         width: 99%;

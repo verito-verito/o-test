@@ -872,7 +872,7 @@ body
     }
 }
 
-@media screen and (max-width: 767px)
+@media screen and (min-width: 568px) and (max-width: 767px)
 {
     .test .olapic-wall-widget .olapic-wall-header .olapic-view,
     .test .olapic-wall-widget .olapic-wall-header .olapic-nav
@@ -1004,6 +1004,15 @@ body
     {
         margin-top: -23.5%;
     }
+    .test .olapic-wall-widget .olapic-wall.grid .item:nth-child(13n),
+    .test .olapic-wall-widget .olapic-wall.grid .item:nth-child(14n)
+    {
+        margin-top: -133px;
+    }
+    .test .olapic-wall-widget .olapic-wall.grid .item:nth-child(15n)
+    {
+        clear: left;
+    }
     .test .olapic-wall-widget .olapic-wall.grid .olapic-item-info
     {
         display: none;
@@ -1028,8 +1037,8 @@ body
     }
     .test .olapic-wall-widget .olapic-wall.grid .item
     {
-        width: 49%;
-        padding-top: 49%;
+        width: 47%;
+        padding-top: 47%;
     }
     .test .olapic-wall-widget .olapic-wall.grid .item:nth-child(5n+1)
     {
